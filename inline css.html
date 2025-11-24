@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Float-Based Web Layout (Inline CSS)</title>
+</head>
+<body style="margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#eef2fb; color:#333;">
+
+  <!-- Page Wrapper -->
+  <div style="max-width:1000px; margin:0 auto;">
+
+    <!-- Header -->
+    <header style="background:#436598; color:#fff; padding:28px 16px; text-align:center; border-bottom:4px solid rgba(0,0,0,0.08);">
+      <h1 style="margin:0; font-size:40px; letter-spacing:.5px;">Float-Based Web Layout</h1>
+    </header><nav style="background:#3f5c8a; padding:18px 16px; text-align:center;">
+  <div style="display:inline-block;">
+    <a href="#" style="display:inline-block; background:#8ea3cf; color:#0b1a33; text-decoration:none; padding:14px 28px; margin:0 14px; border-radius:6px; font-weight:600;width: 40px;">Home</a>
+    <a href="#" style="display:inline-block; background:#8ea3cf; color:#0b1a33; text-decoration:none; padding:14px 28px; margin:0 14px; border-radius:6px; font-weight:600;width: 40px;">About</a>
+    <a href="#" style="display:inline-block; background:#8ea3cf; color:#0b1a33; text-decoration:none; padding:14px 28px; margin:0 14px; border-radius:6px; font-weight:600;">Services</a>
+    <a href="#" style="display:inline-block; background:#8ea3cf; color:#0b1a33; text-decoration:none; padding:14px 28px; margin:0 14px; border-radius:6px; font-weight:600;">Contact</a>
+  </div>
+</nav>
+
+  
+    <!-- Content Band -->
+    <section style="background:#e8edf7; padding:20px 16px;">
+      <div style="background:#fff; border:1px solid #d5d9e6; border-radius:4px; padding:16px;">
+
+        <!-- Sidebar -->
+        <aside style="float:left; width:22%; background:#d6e7d9; border:1px solid #bfd1c3; border-radius:4px; padding:16px; box-sizing:border-box; min-height:360px;">
+          <h3 style="margin:0 0 14px 0;">Sidebar</h3>
+          <ul style="list-style:none; margin:0; padding:0;">
+            <li style="padding:12px 0; border-top:1px solid #b7c9bc;">Menu Item 1</li>
+            <li style="padding:12px 0; border-top:1px solid #b7c9bc;">Menu Item 2</li>
+            <li style="padding:12px 0; border-top:1px solid #b7c9bc;">Menu Item 3</li>
+            <li style="padding:12px 0; border-top:1px solid #b7c9bc;">Menu Item 4</li>
+            <li style="padding:12px 0; border-top:1px solid #b7c9bc; border-bottom:1px solid #b7c9bc;">Menu Item 5</li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main style="float:right; width:75%; box-sizing:border-box;">
+          <div style="background:#f6f8fc; border:1px solid #e1e6f2; border-radius:4px; padding:16px; margin-left:12px;">
+            <h2 style="margin:0 0 10px 0;">Main Content Area</h2>
+            <p style="margin:0 0 16px 0; line-height:1.6;">
+              This layout is created using CSS float properties. The sidebar is floated left, and the main content is
+              floated right.
+            </p>
+
+            <!-- Two floated columns inside main -->
+            <div style="float:left; width:48%; background:#e6d4e6; border:1px solid #d6c4d6; border-radius:4px; padding:16px; box-sizing:border-box; margin:0 0 16px 0;">
+              <h3 style="margin:0 0 10px 0;">Float Column 1</h3>
+              <p style="margin:0; line-height:1.6;">
+                This column is floated left. Float was commonly used for layouts before Flexbox and CSS Grid.
+              </p>
+            </div>
+
+            <div style="float:right; width:48%; background:#e6d4e6; border:1px solid #d6c4d6; border-radius:4px; padding:16px; box-sizing:border-box; margin:0 0 16px 0;">
+              <h3 style="margin:0 0 10px 0;">Float Column 2</h3>
+              <p style="margin:0; line-height:1.6;">
+                This column is also floated left. Using float for layout requires careful clearing of floats.
+              </p>
+            </div>
+
+            <!-- Clear inner columns -->
+            <div style="clear:both;"></div>
+          </div>
+        </main>
+
+        <!-- Clear sidebar + main -->
+        <div style="clear:both;"></div>
+
+      </div>
+
+      <!-- Info box -->
+      <div style="background:#f7e9bf; border:1px solid #e8d9a4; border-radius:4px; padding:18px; margin:18px 0 0 0;">
+        <h3 style="margin:0 0 10px 0;">About Float Layouts</h3>
+        <p style="margin:0 0 10px 0; line-height:1.7;">
+          CSS float is a property that positions an element to the left or right of its container, allowing text and inline
+          elements to wrap around it.
+        </p>
+        <p style="margin:0; line-height:1.7;">
+          While float is still useful for wrapping text around images, it's no longer the preferred method for creating complex page layouts.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#4a6695; color:#e8eeff; text-align:center; padding:22px 12px; font-weight:600;">
+      © 2023 Float Layout Example. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>

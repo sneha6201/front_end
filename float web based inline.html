@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline CSS Example</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0;">
+
+  <div style="background: #4467a0; padding: 20px; color: white; text-align: center; font-weight: bold; font-size: 24px;">
+    Float-Based Web Layout
+  </div>
+
+  <div style="background: #7f9edc; padding: 10px; display: flex; justify-content: space-around;">
+    <div style="background: #9babe6; padding: 10px 40px;">Home</div>
+    <div style="background: #9babe6; padding: 10px 40px;">About</div>
+    <div style="background: #9babe6; padding: 10px 40px;">Services</div>
+    <div style="background: #9babe6; padding: 10px 40px;">Contact</div>
+  </div>
+
+  <div style="background: #eee; padding: 20px; overflow: hidden;">
+
+    <div style="float: left; width: 20%; background: #d6e7ce; padding: 10px; box-sizing: border-box;">
+      <b>Sidebar</b>
+      <p>Menu Item 1</p>
+      <p>Menu Item 2</p>
+      <p>Menu Item 3</p>
+      <p>Menu Item 4</p>
+      <p>Menu Item 5</p>
+    </div>
+
+    <div style="float: right; width: 75%;">
+      <b>Main Content Area</b>
+      <p>This layout is created using CSS float properties. The sidebar is floated left, and the main content is floated right.</p>
+
+      <div style="background: #dcc9e5; padding: 10px; margin-bottom: 10px; float: left; width: 45%; box-sizing: border-box;">
+        <b>Float Column 1</b>
+        <p>This column is floated left. Float was commonly used for layouts before Flexbox and CSS Grid.</p>
+      </div>
+
+      <div style="background: #dcc9e5; padding: 10px; margin-left: 5%; float: left; width: 45%; box-sizing: border-box;">
+        <b>Float Column 2</b>
+        <p>This column is also floated left. Using float for layout requires careful clearing of floats.</p>
+      </div>
+
+      <div style="clear: both;"></div>
+
+    </div>
+
+  </div>
+
+  <div style="background: #fde8a1; padding: 15px; margin-top: 10px;">
+    <b>About Float Layouts</b>
+    <p>CSS float is a property that positions an element to the left or right of its container, allowing text and inline elements to wrap around it.</p>
+    <p>While float is still useful for wrapping text around images, it's no longer the preferred method for creating complex page layouts.</p>
+  </div>
+
+  <div style="background: #4467a0; padding: 10px; text-align: center; color: white;">
+    © 2023 Float Layout Example. All rights reserved.
+  </div>
+
+</body>
+</html>
+```
